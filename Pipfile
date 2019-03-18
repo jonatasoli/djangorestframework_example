@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+ipdb = "*"
+neovim = "*"
+jedi = "*"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+dj-database-url = "*"
+dj-static = "*"
+python-decouple = "*"
+gunicorn = "*"
+psycopg2 = "*"
+django-extensions = "*"
+django-test-without-migrations = "*"
+pillow = "*"
+
+[requires]
+python_version = "3.6"
