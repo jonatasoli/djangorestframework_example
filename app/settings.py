@@ -18,7 +18,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'test_without_migrations',
     'django_extensions',
+    'rest_framework',
+    'rest_framework.authtoken',
     'core',
+    'user',
+    'todo',
 ]
 
 MIDDLEWARE = [
@@ -93,7 +97,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/vol/web/media'
+STATIC_ROOT = '/vol/web/static'
 
 # Custom configs
 

@@ -44,3 +44,13 @@ class ModelTest(TestCase):
 
         self.assertTrue(user.is_superuser)
         self.assertTrue(user.is_staff)
+
+    def test_todo_str(self):
+        """Test the Tpdo string representation"""
+        todo = models.Todo.objects.create(
+            user=sample_user(),
+            task='Todo 1',
+            description='My first Todo',
+
+        )
+        self.assertEqual(str(todo), todo.task)
